@@ -1,6 +1,5 @@
 package com.bbva.challenge.repo;
 
-import com.bbva.challenge.utils.OperationType;
 import org.bson.Document;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;

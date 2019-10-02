@@ -32,7 +32,6 @@ public class ChallengeApplication {
         SpringApplication.run(ChallengeApplication.class, args);
     }
 
-
     @EnableWebSecurity
     @Configuration
     class WebSecurityConfig extends WebSecurityConfigurerAdapter {
@@ -43,7 +42,7 @@ public class ChallengeApplication {
                     .addFilterAfter(jwtAuthorizationFilter, UsernamePasswordAuthenticationFilter.class)
                     .authorizeRequests()
                     .antMatchers(AUTH_WHITELIST).permitAll()
-                    .antMatchers(HttpMethod.POST,"/auth/**")
+                    .antMatchers(HttpMethod.POST, "/auth/**")
                     .permitAll()
                     .anyRequest().authenticated();
         }

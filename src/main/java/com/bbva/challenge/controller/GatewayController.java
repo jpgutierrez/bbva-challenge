@@ -1,10 +1,12 @@
 package com.bbva.challenge.controller;
 
-import com.bbva.challenge.service.*;
+import com.bbva.challenge.service.BaseService;
+import com.bbva.challenge.service.GatewayService;
+import com.bbva.challenge.service.NoSqlService;
+import com.bbva.challenge.service.SqlService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
